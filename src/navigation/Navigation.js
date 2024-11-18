@@ -12,9 +12,9 @@ const Tab = createBottomTabNavigator();
 export default function Navigation(){
     return (
         <Tab.Navigator>
-            <Tab.Screen name="Favorito" component={FavoriteNavigation} options={{headerShown: false,tabBarLabel:"Favorito", tabBarIcon:(color, size)=>(<Icon name="heart" color={color} size={size}/>)}}/>
-            <Tab.Screen name="Pokedex" component={PokedexNavigation} options={{headerShown: false,tabBarLabel:"", tabBarIcon:()=> renderPokebola()}}/>
-            <Tab.Screen name="Account" component={AccountNavigation} options={{headerShown: false,tabBarLabel:"Account", tabBarIcon:(color, size)=>(<Icon name="user" color={color} size={size}/>)}}/>
+            <Tab.Screen name="FavoriteNavigation" component={FavoriteNavigation} options={{headerShown: false,tabBarLabel:"Favorito", tabBarIcon:(color, size)=>(<Icon name="heart" color={color} size={size}/>)}}/>
+            <Tab.Screen name="PokedexNavigation" component={PokedexNavigation} options={{headerShown: false,tabBarLabel:"", tabBarIcon:()=> renderPokebola()}}/>
+            <Tab.Screen name="AccountNavigation" component={AccountNavigation} options={{headerShown: false,tabBarLabel:"Account", tabBarIcon:(color, size)=>(<Icon name="user" color={color} size={size}/>)}}/>
         </Tab.Navigator>
     )
 }
